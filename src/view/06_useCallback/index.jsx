@@ -14,14 +14,18 @@ const Page = () => {
 
   const callback = useCallback(() => {
     setTotal(num1 + num2);
-  }, []);
+  }, [num1, num2]);
+
+  const aaa = () => {
+    setTotal(num1 + num2);
+  };
 
   return (
     <div>
       <div className="h3 border-bottom p-3">React useCallback</div>
       <div>
         <div className="mb-3">
-          <span className="me-4">num1 : {num1}</span>{" "}
+          <span className="me-4">num1 : {num1}</span>
           <button type="button" className="btn btn-info" onClick={onClick1}>
             count1
           </button>

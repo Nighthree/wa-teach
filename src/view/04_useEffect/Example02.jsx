@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 const Example = () => {
   const [state, setState] = useState(0);
@@ -13,7 +13,7 @@ const Example = () => {
   };
 
   useEffect(() => {
-    console.log('Example 02 useEffect', 'state', state, 'other', other);
+    console.log("Example 02 useEffect", "state", state, "other", other);
   }, [state /*監聽對象*/]);
 
   return (

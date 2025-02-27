@@ -9,7 +9,7 @@ const Example02 = () => {
         setSecond((prev) => {
           if (prev-- > 0) {
             fn();
-            return prev-- > 0;
+            return prev--;
           } else {
             return 0;
           }

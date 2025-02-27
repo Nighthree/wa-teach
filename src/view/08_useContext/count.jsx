@@ -1,4 +1,4 @@
-import { useMyContext } from './myContext';
+import { useMyContext } from "./myContext";
 
 const Count = (props) => {
   const { count, setCount, theme } = useMyContext();
@@ -8,7 +8,7 @@ const Count = (props) => {
   };
 
   return (
-    <div>
+    <div className="mb-3 border-bottom">
       <div>Count Component</div>
       Count : {count}, theme:{theme}
       <button type="button" onClick={atClick}>

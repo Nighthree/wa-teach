@@ -1,10 +1,10 @@
-import { useState, useEffect, createContext, useContext, useMemo } from "react";
-import { observer } from "mobx-react-lite";
+import { useState, createContext } from "react";
 
 export const SeniorContext = createContext(null);
 
 const SeniorContextProvider = ({ children }) => {
   const [isLogin, setIsLogin] = useState(false);
+  const URL = new URLSearchParams();
 
   const contextValue = {
     setate: {
